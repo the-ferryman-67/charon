@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Charon &mdash; the ferryman of pewdiepie-archdaemon/odysseus</title>
+<style>
+  :root { --ink:#dfe8f5; --dim:#8aa0c0; --gold:#e8c873; --green:#7ee0b8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:radial-gradient(120% 80% at 50% -10%,#0e1830 0%,#070b14 60%);
+         color:var(--ink); font:16px/1.6 ui-monospace,"SF Mono",Menlo,Consolas,monospace; }
+  .wrap { max-width:860px; margin:0 auto; padding:48px 22px 80px; }
+  h1 { font-size:46px; letter-spacing:.18em; margin:0 0 2px; font-weight:600; }
+  .sub { color:var(--dim); letter-spacing:.06em; margin:0 0 4px; }
+  .styx { color:#3a4a66; letter-spacing:.5em; font-size:12px; margin:18px 0 28px; }
+  .lede { font-size:20px; line-height:1.55; margin:0 0 30px; }
+  .lede b { color:var(--gold); }
+  .hero { display:flex; gap:14px; flex-wrap:wrap; margin:0 0 8px; }
+  .stat { flex:1 1 150px; background:#0c1322; border:1px solid #1b2740; border-radius:12px; padding:16px 18px; }
+  .stat .n { font-size:30px; font-weight:600; }
+  .stat .k { color:var(--dim); font-size:13px; letter-spacing:.04em; }
+  .green { color:var(--green); } .gold { color:var(--gold); } .blue { color:#8aa0c0; }
+  h2 { font-size:14px; letter-spacing:.18em; color:var(--dim); text-transform:uppercase;
+        margin:42px 0 14px; border-bottom:1px solid #1b2740; padding-bottom:8px; }
+  .tide { margin:0 0 16px; }
+  .bar { height:8px; border-radius:6px; background:linear-gradient(90deg,#2b6cb0,#7ee0b8); }
+  .tidemeta { display:flex; gap:12px; align-items:baseline; margin-top:6px; flex-wrap:wrap; }
+  .count { color:var(--gold); font-weight:600; font-size:18px; }
+  .label { letter-spacing:.04em; }
+  .wait { color:var(--dim); font-size:13px; }
+  .keepertitle { color:#9fb2cc; font-size:13px; margin-top:2px; }
+  a { color:var(--green); text-decoration:none; } a:hover { text-decoration:underline; }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  td { padding:7px 8px; border-bottom:1px solid #141d31; vertical-align:top; }
+  .pr a { color:var(--dim); } .obol { color:var(--gold); text-align:center; }
+  .pm { color:var(--green); text-align:center; }
+  th { text-align:left; color:var(--dim); font-size:11px; letter-spacing:.08em; text-transform:uppercase; padding:6px 8px; border-bottom:1px solid #1b2740; }
+  .badge { border:1px solid; border-radius:20px; padding:1px 9px; font-size:11px; white-space:nowrap; }
+  .reason { color:var(--dim); }
+  .note { background:#0c1322; border:1px solid #1b2740; border-left:3px solid var(--gold);
+           border-radius:8px; padding:14px 18px; color:#a9bad4; font-size:13px; margin:26px 0; }
+  footer { color:#5a6c8a; font-size:12px; margin-top:40px; line-height:1.7; }
+</style></head>
+<body><div class="wrap">
+  <h1>CHARON</h1>
+  <p class="sub">the ferryman of the Styx &middot; pewdiepie-archdaemon/odysseus</p>
+  <p class="styx">&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; S T Y X &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;</p>
+
+  <p class="lede">408 souls wait on the shore. But many carry the same offering &mdash;
+  <b>they are really 279 distinct decisions</b>, not 408.
+  163 of them arrive in 34 kindred tides.
+  The computer is reviewing the computer, on its own box, with nothing leaving the river.</p>
+
+  <div class="hero">
+    <div class="stat"><div class="n">408</div><div class="k">souls on the shore</div></div>
+    <div class="stat"><div class="n green">279</div><div class="k">truly-distinct (68%)</div></div>
+    <div class="stat"><div class="n gold">34</div><div class="k">kindred tides</div></div>
+  </div>
+  <div class="hero">
+    <div class="stat"><div class="n green">224</div><div class="k">&#9972; ABOARD</div></div>
+    <div class="stat"><div class="n gold">55</div><div class="k">&#129689; OBOL-NEEDED</div></div>
+    <div class="stat"><div class="n blue">129</div><div class="k">&#8987; SHORE (can wait)</div></div>
+  </div>
+
+  <h2>The largest tides &mdash; the same soul, many times over</h2>
+  
+      <div class="tide">
+        <div class="bar" style="width:100%"></div>
+        <div class="tidemeta">
+          <span class="count">37&times;</span>
+          <span class="label">ignore / rows / skip</span>
+          <span class="wait">36 can wait &middot; keeper
+            <a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/427" target="_blank" rel="noopener">#427</a></span>
+        </div>
+        <div class="keepertitle">Animate model rows when collapsing Models</div>
+      </div>
+      <div class="tide">
+        <div class="bar" style="width:76%"></div>
+        <div class="tidemeta">
+          <span class="count">28&times;</span>
+          <span class="label">replace / datetime / utcnow</span>
+          <span class="wait">27 can wait &middot; keeper
+            <a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1432" target="_blank" rel="noopener">#1432</a></span>
+        </div>
+        <div class="keepertitle">feat: Agents source map only</div>
+      </div>
+      <div class="tide">
+        <div class="bar" style="width:19%"></div>
+        <div class="tidemeta">
+          <span class="count">7&times;</span>
+          <span class="label">tool / input / truthy</span>
+          <span class="wait">6 can wait &middot; keeper
+            <a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1620" target="_blank" rel="noopener">#1620</a></span>
+        </div>
+        <div class="keepertitle">fix: is_public_blocked_tool crashes on a truthy non-string tool name</div>
+      </div>
+      <div class="tide">
+        <div class="bar" style="width:19%"></div>
+        <div class="tidemeta">
+          <span class="count">7&times;</span>
+          <span class="label">compare / model / blind</span>
+          <span class="wait">6 can wait &middot; keeper
+            <a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1307" target="_blank" rel="noopener">#1307</a></span>
+        </div>
+        <div class="keepertitle">fix(compare): keep blind helper sessions anonymous</div>
+      </div>
+      <div class="tide">
+        <div class="bar" style="width:16%"></div>
+        <div class="tidemeta">
+          <span class="count">6&times;</span>
+          <span class="label">scope / owner / endpoint</span>
+          <span class="wait">5 can wait &middot; keeper
+            <a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1491" target="_blank" rel="noopener">#1491</a></span>
+        </div>
+        <div class="keepertitle">Generalize local wrapper endpoint support</div>
+      </div>
+      <div class="tide">
+        <div class="bar" style="width:14%"></div>
+        <div class="tidemeta">
+          <span class="count">5&times;</span>
+          <span class="label">security / ssrf / surface</span>
+          <span class="wait">4 can wait &middot; keeper
+            <a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1101" target="_blank" rel="noopener">#1101</a></span>
+        </div>
+        <div class="keepertitle">fix(security): wire web fetches to SSRF policy guard 2/3</div>
+      </div>
+      <div class="tide">
+        <div class="bar" style="width:11%"></div>
+        <div class="tidemeta">
+          <span class="count">4&times;</span>
+          <span class="label">standardize / panel / snapping</span>
+          <span class="wait">3 can wait &middot; keeper
+            <a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1060" target="_blank" rel="noopener">#1060</a></span>
+        </div>
+        <div class="keepertitle">settings polish.</div>
+      </div>
+      <div class="tide">
+        <div class="bar" style="width:11%"></div>
+        <div class="tidemeta">
+          <span class="count">4&times;</span>
+          <span class="label">codex / provider / subscription</span>
+          <span class="wait">3 can wait &middot; keeper
+            <a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/732" target="_blank" rel="noopener">#732</a></span>
+        </div>
+        <div class="keepertitle">Add Codex OAuth provider with Agent mode tool support</div>
+      </div>
+      <div class="tide">
+        <div class="bar" style="width:11%"></div>
+        <div class="tidemeta">
+          <span class="count">4&times;</span>
+          <span class="label">windows / port / closeout</span>
+          <span class="wait">3 can wait &middot; keeper
+            <a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1133" target="_blank" rel="noopener">#1133</a></span>
+        </div>
+        <div class="keepertitle">Windows terminal: add a real ConPTY PTY; fix /ws/pty failing on a clean install (missing w</div>
+      </div>
+      <div class="tide">
+        <div class="bar" style="width:8%"></div>
+        <div class="tidemeta">
+          <span class="count">3&times;</span>
+          <span class="label">editor / scrollbar / line</span>
+          <span class="wait">2 can wait &middot; keeper
+            <a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1528" target="_blank" rel="noopener">#1528</a></span>
+        </div>
+        <div class="keepertitle">fix(documents): restore a draggable editor scrollbar</div>
+      </div>
+      <div class="tide">
+        <div class="bar" style="width:8%"></div>
+        <div class="tidemeta">
+          <span class="count">3&times;</span>
+          <span class="label">emoji / chat / render</span>
+          <span class="wait">2 can wait &middot; keeper
+            <a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/629" target="_blank" rel="noopener">#629</a></span>
+        </div>
+        <div class="keepertitle">Render emoji shortcodes as icons in chat (#345)</div>
+      </div>
+      <div class="tide">
+        <div class="bar" style="width:8%"></div>
+        <div class="tidemeta">
+          <span class="count">3&times;</span>
+          <span class="label">fall / back / from</span>
+          <span class="wait">2 can wait &middot; keeper
+            <a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1394" target="_blank" rel="noopener">#1394</a></span>
+        </div>
+        <div class="keepertitle">Skip invalid research CLI records</div>
+      </div>
+      <div class="tide">
+        <div class="bar" style="width:8%"></div>
+        <div class="tidemeta">
+          <span class="count">3&times;</span>
+          <span class="label">status / release / artifact</span>
+          <span class="wait">2 can wait &middot; keeper
+            <a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1028" target="_blank" rel="noopener">#1028</a></span>
+        </div>
+        <div class="keepertitle">Add check-only software update status</div>
+      </div>
+      <div class="tide">
+        <div class="bar" style="width:8%"></div>
+        <div class="tidemeta">
+          <span class="count">3&times;</span>
+          <span class="label">security / research / report</span>
+          <span class="wait">2 can wait &middot; keeper
+            <a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/364" target="_blank" rel="noopener">#364</a></span>
+        </div>
+        <div class="keepertitle">security: sanitize rendered research-report HTML</div>
+      </div>
+
+  
+  <h2>What Charon learned from your own history</h2>
+  <div class="note"><b>He studied 662 of your closed PRs</b> (403 merged,
+  259 turned back) and trained two classifiers &mdash; logistic regression and complement
+  naive Bayes &mdash; to predict what you tend to accept. Honest score: <b>0.703 /
+  0.702</b> cross-validated AUC (0.5 is a coin-flip, 1.0 is perfect; ~0.70 is a real,
+  modest signal, not a promise). Every soul below carries his learned merge-likelihood.
+  Trained locally; the history never left the box.</div>
+  <h2>Souls worth the maintainer's eyes first &mdash; ranked by what you'd merge</h2>
+  <table>
+    <thead><tr><th>soul</th><th>verdict</th><th>obol</th><th>merge?</th><th>offering</th><th>why</th></tr></thead>
+    <tbody>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/406" target="_blank" rel="noopener">#406</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">7</td>
+          <td class="pm">88%</td>
+          <td class="title">Explain failed RAG uploads</td>
+          <td class="reason">a real account, not a wish; knows the others (cites #)</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1221" target="_blank" rel="noopener">#1221</a></td>
+          <td><span class="badge" style="color:#e8c873;border-color:#e8c873">&#129689; OBOL-NEEDED</span></td>
+          <td class="obol">6</td>
+          <td class="pm">87%</td>
+          <td class="title">Keep calendar reminders loading with bad stored state</td>
+          <td class="reason">a real account, not a wish</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1370" target="_blank" rel="noopener">#1370</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">9</td>
+          <td class="pm">86%</td>
+          <td class="title">fix(agent): coerce non-object tool-call arguments instead of crashing the stream</td>
+          <td class="reason">brings tests; a real account, not a wish; named its kind</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1163" target="_blank" rel="noopener">#1163</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">9</td>
+          <td class="pm">84%</td>
+          <td class="title">Add expandable Deep Research synapse view</td>
+          <td class="reason">brings tests; a real account, not a wish; knows the others (cites #)</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1394" target="_blank" rel="noopener">#1394</a></td>
+          <td><span class="badge" style="color:#e8c873;border-color:#e8c873">&#129689; OBOL-NEEDED</span></td>
+          <td class="obol">6</td>
+          <td class="pm">84%</td>
+          <td class="title">Skip invalid research CLI records</td>
+          <td class="reason">a real account, not a wish</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1451" target="_blank" rel="noopener">#1451</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">9</td>
+          <td class="pm">84%</td>
+          <td class="title">Guard message persistence after session delete</td>
+          <td class="reason">brings tests; a real account, not a wish; knows the others (cites #)</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/427" target="_blank" rel="noopener">#427</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">7</td>
+          <td class="pm">83%</td>
+          <td class="title">Animate model rows when collapsing Models</td>
+          <td class="reason">a real account, not a wish; knows the others (cites #)</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1198" target="_blank" rel="noopener">#1198</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">8</td>
+          <td class="pm">83%</td>
+          <td class="title">Diagnose vLLM serve runtime issues</td>
+          <td class="reason">brings tests; a real account, not a wish</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1306" target="_blank" rel="noopener">#1306</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">7</td>
+          <td class="pm">82%</td>
+          <td class="title">fix(caldav): no-op prune when date_search returns 0 events</td>
+          <td class="reason">a real account, not a wish; named its kind</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/610" target="_blank" rel="noopener">#610</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">9</td>
+          <td class="pm">81%</td>
+          <td class="title">Fix document deeplinks</td>
+          <td class="reason">brings tests; a real account, not a wish; knows the others (cites #)</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1550" target="_blank" rel="noopener">#1550</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">7</td>
+          <td class="pm">81%</td>
+          <td class="title">fix: params_b crashes the whole ranking on a malformed parameter_count</td>
+          <td class="reason">a real account, not a wish; named its kind</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1283" target="_blank" rel="noopener">#1283</a></td>
+          <td><span class="badge" style="color:#e8c873;border-color:#e8c873">&#129689; OBOL-NEEDED</span></td>
+          <td class="obol">6</td>
+          <td class="pm">81%</td>
+          <td class="title">Report llama.cpp accelerator capability</td>
+          <td class="reason">a real account, not a wish</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1352" target="_blank" rel="noopener">#1352</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">10</td>
+          <td class="pm">81%</td>
+          <td class="title">fix(search): degrade to empty results on non-JSON provider responses (#1129)</td>
+          <td class="reason">brings tests; a real account, not a wish; named its kind; knows the others (cite</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1620" target="_blank" rel="noopener">#1620</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">9</td>
+          <td class="pm">81%</td>
+          <td class="title">fix: is_public_blocked_tool crashes on a truthy non-string tool name</td>
+          <td class="reason">brings tests; a real account, not a wish; named its kind</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1384" target="_blank" rel="noopener">#1384</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">9</td>
+          <td class="pm">80%</td>
+          <td class="title">fix(notes): tolerate checklist items stored as plain strings</td>
+          <td class="reason">brings tests; a real account, not a wish; named its kind</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/540" target="_blank" rel="noopener">#540</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">9</td>
+          <td class="pm">79%</td>
+          <td class="title">Add selected-server readiness and vLLM Docker serve mode</td>
+          <td class="reason">brings tests; a real account, not a wish; knows the others (cites #)</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/920" target="_blank" rel="noopener">#920</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">8</td>
+          <td class="pm">78%</td>
+          <td class="title">tests: cover companion pairing route responses</td>
+          <td class="reason">brings tests; a real account, not a wish</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1544" target="_blank" rel="noopener">#1544</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">7</td>
+          <td class="pm">78%</td>
+          <td class="title">fix: POST /api/contacts/add 500s on JSON null name/email</td>
+          <td class="reason">a real account, not a wish; named its kind</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1354" target="_blank" rel="noopener">#1354</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">9</td>
+          <td class="pm">78%</td>
+          <td class="title">fix(email): guard _decode_header against unknown MIME charset</td>
+          <td class="reason">brings tests; a real account, not a wish; named its kind</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/555" target="_blank" rel="noopener">#555</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">7</td>
+          <td class="pm">78%</td>
+          <td class="title">Add a 5-mode composer with server-side permission enforcement + approvals</td>
+          <td class="reason">a real account, not a wish; knows the others (cites #)</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1622" target="_blank" rel="noopener">#1622</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">8</td>
+          <td class="pm">77%</td>
+          <td class="title">tests: cover atomic IO durability contract</td>
+          <td class="reason">brings tests; a real account, not a wish</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1450" target="_blank" rel="noopener">#1450</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">9</td>
+          <td class="pm">77%</td>
+          <td class="title">fix(tts): tolerate a malformed tts_speed instead of returning 500</td>
+          <td class="reason">brings tests; a real account, not a wish; named its kind</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1124" target="_blank" rel="noopener">#1124</a></td>
+          <td><span class="badge" style="color:#7ee0b8;border-color:#7ee0b8">&#9972; ABOARD</span></td>
+          <td class="obol">7</td>
+          <td class="pm">77%</td>
+          <td class="title">Expose generic attachments to agent tools</td>
+          <td class="reason">a real account, not a wish; knows the others (cites #)</td>
+        </tr>
+        <tr>
+          <td class="pr"><a href="https://github.com/pewdiepie-archdaemon/odysseus/pull/1107" target="_blank" rel="noopener">#1107</a></td>
+          <td><span class="badge" style="color:#e8c873;border-color:#e8c873">&#129689; OBOL-NEEDED</span></td>
+          <td class="obol">6</td>
+          <td class="pm">77%</td>
+          <td class="title">Add Companion Access Center</td>
+          <td class="reason">a real account, not a wish</td>
+        </tr></tbody></table>
+
+  <div class="note"><b>How Charon judges.</b> He runs entirely on your own machine.
+  No cloud, no tracking, no data leaves the box. Kindred souls are found by weighing each
+  PR two ways &mdash; by its words (TF-IDF) and by its concepts across the contributors who
+  raised them (CF-IOF) &mdash; then he weighs each offering for the coin: tests, a real
+  account, a named kind. Every verdict can be signed with a local key, replayable and
+  tamper-evident. Your repository stays yours.</div>
+
+  <footer>
+  A draft triage over a public snapshot of pewdiepie-archdaemon/odysseus &mdash; honest, not binding.
+  Charon ran on a clone; point him at your own repo for the live feed.<br>
+  &#127754; Odysseus sailed to the underworld in Book 11 to find his way home. Charon is the
+  ferryman who decides who crosses. 408 souls is a lot for one maintainer to ferry alone.<br>
+  weighed 2026-06-02 23:54 UTC &middot; Charon does not judge the dead. He just checks if they brought the coin.
+  </footer>
+</div></body></html>
