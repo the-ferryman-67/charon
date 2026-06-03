@@ -420,6 +420,38 @@
   Charon ran on a clone; point him at your own repo for the live feed.<br>
   &#127754; Odysseus sailed to the underworld in Book 11 to find his way home. Charon is the
   ferryman who decides who crosses. 408 souls is a lot for one maintainer to ferry alone.<br>
-  weighed 2026-06-02 23:54 UTC &middot; Charon does not judge the dead. He just checks if they brought the coin.
+  weighed 2026-06-03 01:15 UTC &middot; Charon does not judge the dead. He just checks if they brought the coin.
   </footer>
-</div></body></html>
+</div><script>
+// the hero numbers count up — Charon tallying the dead
+document.querySelectorAll('.stat .n').forEach(function(el){
+  var target = parseInt(el.textContent, 10);
+  if (!isFinite(target)) return;
+  var start = performance.now();
+  (function tick(now){
+    var p = Math.min((now - start) / 1500, 1);
+    el.textContent = Math.round((1 - Math.pow(1 - p, 3)) * target);
+    if (p < 1) requestAnimationFrame(tick); else el.textContent = target;
+  })(start);
+});
+// borderline obols wink at the 6-7
+document.querySelectorAll('td.obol').forEach(function(el){
+  var v = parseInt(el.textContent, 10);
+  if (v === 6 || v === 7){ el.title = 'like a ' + v + '... 6-7'; el.style.cursor = 'help'; }
+});
+// konami -> one line of Charon brainrot, then gone
+(function(){
+  var SEQ=[38,38,40,40,37,39,37,39,66,65], i=0;
+  addEventListener('keydown', function(e){
+    i = (e.keyCode===SEQ[i]) ? i+1 : (e.keyCode===SEQ[0]?1:0);
+    if (i===SEQ.length){ i=0;
+      var t=document.createElement('div');
+      t.style.cssText='position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#0c1322;border:1px solid #e8c873;color:#e8c873;padding:.7rem 1.3rem;border-radius:8px;font:13px ui-monospace,monospace;z-index:9999;text-align:center;max-width:90vw';
+      t.innerHTML='CHARON: &ldquo;fratello mio&hellip; even I cannot always tell if it&rsquo;s a 6 or a 7&rdquo; \uD83E\uDE99';
+      document.body.appendChild(t);
+      setTimeout(function(){ t.style.transition='opacity .6s'; t.style.opacity='0'; }, 3200);
+      setTimeout(function(){ t.remove(); }, 3900);
+    }
+  });
+})();
+</script></body></html>
